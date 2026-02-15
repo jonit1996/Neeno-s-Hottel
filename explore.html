@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nearby | Kottiyoor Valley</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Specific Dark Theme for this page as per screenshot */
+        body.explore-page { background-color: #111; color: #ccc; }
+        .explore-header { padding: 150px 0 50px; text-align: center; }
+        .explore-header h1 { color: var(--white); font-size: 3rem; }
+        .explore-list { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 50px; }
+        .place-card { border-bottom: 1px dashed #444; padding-bottom: 20px; }
+        .place-card h3 { color: var(--gold-accent); margin-bottom: 10px; }
+        .place-card p { font-size: 0.95rem; line-height: 1.8; }
+        
+        @media(max-width:768px) { .explore-list { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="explore-page">
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" style="color: white; font-weight: bold; font-size: 1.5rem;">Kottiyoor Valley</a>
+                </div>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="explore-header">
+            <h4>Kottiyoor Tourism</h4>
+            <h1>Explore Nearby Attractions</h1>
+            <p style="max-width: 700px; margin: 20px auto;">Discover the best tourist attractions around Kelakam with ease. From scenic hills to wildlife sanctuaries, we are perfectly located for exploring the hidden gems.</p>
+        </div>
+
+        <div class="explore-list">
+            <div>
+                <div class="place-card">
+                    <h3>Aralam Wildlife Sanctuary</h3>
+                    <p>Distance: ~6 km<br>Timings: 8:00 AM – 4:00 PM (Closed Mondays)<br>Experience the dense forests and wildlife sightings.</p>
+                </div>
+                <div class="place-card">
+                    <h3>Aralam Farm</h3>
+                    <p>Distance: ~10 km | Timings: 9:00 AM – 5:00 PM</p>
+                </div>
+                <div class="place-card">
+                    <h3>Palukachi Mala</h3>
+                    <p>Distance: ~8 km | Open all day<br>Best for early morning treks and sunrise views.</p>
+                </div>
+                <div class="place-card">
+                    <h3>Mananthavady (Wayanad Entry)</h3>
+                    <p>Distance: ~30 km<br>The gateway to the beautiful hills of Wayanad.</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="place-card">
+                    <h3>Kottiyoor Temple</h3>
+                    <p>Distance: ~7 km<br>Timings: 5:30 AM – 10:00 AM & 5:00 PM – 8:00 PM<br>An ancient pilgrimage center in the forest.</p>
+                </div>
+                <div class="place-card">
+                    <h3>Elapeedika</h3>
+                    <p>Distance: ~8 km | Open all day<br>A historical place with scenic beauty.</p>
+                </div>
+                <div class="place-card">
+                    <h3>Periya Ghat Pass</h3>
+                    <p>Distance: ~26 km | Open 24/7<br>Enjoy a drive through the winding roads to Wayanad.</p>
+                </div>
+                <div class="place-card">
+                    <h3>Boys Town</h3>
+                    <p>Distance: ~16 km | via Malayora Hwy</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" style="padding: 60px 0;">
+            <a href="booking.html" class="btn btn-outline">Book Your Stay Now</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

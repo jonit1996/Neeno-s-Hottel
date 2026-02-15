@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining & Restaurant | Kottiyoor Valley</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/restaurant-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .menu-highlights {
+            background-color: var(--bg-dark);
+            color: white;
+            padding: 80px 0;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .menu-item {
+            background: #222;
+            padding: 30px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .menu-item:hover { border-color: var(--gold-accent); }
+        .menu-item h4 { color: var(--gold-accent); margin-bottom: 10px; }
+        .dish-price { float: right; color: white; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" style="color: white; font-weight: bold; font-size: 1.5rem;">Kottiyoor Valley</a>
+                </div>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="restaurant.html" class="active" style="color:var(--gold-accent);">Restaurant</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div>
+            <p style="letter-spacing: 3px; color: var(--gold-accent);">CULINARY DELIGHTS</p>
+            <h1 style="font-size: 3.5rem;">The Flavor of Malabar</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="section-title">A Multi-Cuisine Experience</h2>
+            <p style="max-width: 800px; margin: 0 auto 40px;">
+                Our in-house restaurant offers a premium dining experience with a focus on authentic Malabar cuisine. From spicy curries to delicate seafood, our chefs prepare every dish with locally sourced ingredients. We also serve North Indian, Chinese, and Continental dishes.
+            </p>
+            <img src="assets/images/food-spread.jpg" alt="Kerala Food Spread" style="width:100%; height: 400px; object-fit:cover; border-radius: 4px;">
+        </div>
+    </section>
+
+    <section class="menu-highlights">
+        <div class="container">
+            <h2 class="section-title text-center" style="color: white;">Signature Dishes</h2>
+            <div class="menu-grid" style="margin-top: 40px;">
+                
+                <div class="menu-item">
+                    <h4>Malabar Chicken Biryani</h4>
+                    <p>Aromatic kaima rice cooked with tender chicken and traditional Malabar spices.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Kerala Sadya (On Request)</h4>
+                    <p>The traditional vegetarian feast served on a banana leaf.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Fish Molee</h4>
+                    <p>Seafood delicacy cooked in rich coconut milk and mild spices.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Beef Fry (Nadan)</h4>
+                    <p>Slow-roasted beef with coconut slices and curry leaves.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Ghee Roast Dosa</h4>
+                    <p>Crispy crepe served with coconut chutney and sambar.</p>
+                </div>
+
+                <div class="menu-item">
+                    <h4>Fresh Juices & Shakes</h4>
+                    <p>Seasonal fruit juices and refreshing milkshakes.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                <div>
+                    <h2 class="section-title" style="text-align: left;">Banquet Hall</h2>
+                    <p>Planning a wedding reception, birthday party, or corporate meeting? Our fully air-conditioned banquet hall can accommodate up to 125 guests.</p>
+                    <br>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color:var(--primary-color);"></i> Projector & Sound System</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color:var(--primary-color);"></i> Customized Buffet Menu</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color:var(--primary-color);"></i> Event Staff Support</li>
+                    </ul>
+                    <br>
+                    <a href="contact.html" class="btn btn-primary">Enquire for Events</a>
+                </div>
+                <div>
+                    <img src="assets/images/banquet.jpg" alt="Banquet Hall" style="width:100%; border-radius: 4px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Kottiyoor Valley. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

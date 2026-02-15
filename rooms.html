@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Rooms | Kottiyoor Valley</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Sub-page Header Background */
+        .page-header {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/rooms-header.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .room-detailed-card {
+            display: flex;
+            background: white;
+            box-shadow: var(--box-shadow);
+            margin-bottom: 50px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .room-detailed-card img { width: 50%; object-fit: cover; }
+        .room-detailed-info { padding: 40px; width: 50%; display: flex; flex-direction: column; justify-content: center; }
+        
+        @media(max-width: 768px) {
+            .room-detailed-card { flex-direction: column; }
+            .room-detailed-card img, .room-detailed-info { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" style="color: white; font-weight: bold; font-size: 1.5rem;">Kottiyoor Valley</a>
+                </div>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html" class="active" style="color:var(--gold-accent);">Rooms</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn-book">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div>
+            <h1 style="font-size: 3.5rem; color: var(--gold-accent);">Our Accommodations</h1>
+            <p style="font-size: 1.2rem;">Experience comfort in the lap of nature</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            
+            <div class="room-detailed-card">
+                <img src="assets/images/deluxe-room.jpg" alt="Deluxe Room">
+                <div class="room-detailed-info">
+                    <h3 style="color: var(--primary-color);">Deluxe Room</h3>
+                    <p style="margin-bottom: 20px;">Designed for couples or solo travelers, this room offers a cozy ambiance with a view of the lush greenery. Features a king-size bed and modern workstation.</p>
+                    <ul style="margin-bottom: 25px; color: #555;">
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Free High-Speed WiFi</li>
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Air Conditioning</li>
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Complimentary Breakfast</li>
+                    </ul>
+                    <a href="booking.html?room=deluxe" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+            <div class="room-detailed-card" style="flex-direction: row-reverse;">
+                <img src="assets/images/twin-room.jpg" alt="Twin Room">
+                <div class="room-detailed-info">
+                    <h3 style="color: var(--primary-color);">Twin Deluxe Room</h3>
+                    <p style="margin-bottom: 20px;">Perfect for friends or colleagues. This spacious room features two separate single beds with premium linens to ensure a good night's sleep.</p>
+                    <ul style="margin-bottom: 25px; color: #555;">
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> 2 Single Beds</li>
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Flat Screen TV</li>
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Hot Water 24/7</li>
+                    </ul>
+                    <a href="booking.html?room=twin" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+            <div class="room-detailed-card">
+                <img src="assets/images/suite-room.jpg" alt="Family Suite">
+                <div class="room-detailed-info">
+                    <h3 style="color: var(--primary-color);">Semi Suite / Family Room</h3>
+                    <p style="margin-bottom: 20px;">For those seeking luxury or traveling with family. Includes a sitting area and extra space for relaxation. Can accommodate up to 4 guests.</p>
+                    <ul style="margin-bottom: 25px; color: #555;">
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Living Area</li>
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Mini Fridge</li>
+                        <li><i class="fas fa-check" style="color:var(--gold-accent);"></i> Mountain View</li>
+                    </ul>
+                    <a href="booking.html?room=suite" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Kottiyoor Valley. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

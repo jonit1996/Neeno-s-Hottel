@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kottiyoor Valley</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/contact-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .contact-box {
+            padding: 30px;
+            background: white;
+            box-shadow: var(--box-shadow);
+            height: 100%;
+        }
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            font-family: inherit;
+        }
+        .form-control:focus {
+            border-color: var(--gold-accent);
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" style="color: white; font-weight: bold; font-size: 1.5rem;">Kottiyoor Valley</a>
+                </div>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="contact.html" class="active" style="color:var(--gold-accent);">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div>
+            <h1 style="font-size: 3.5rem;">Get in Touch</h1>
+            <p>We are here to help you plan your perfect stay.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
+                
+                <div>
+                    <h2 class="section-title" style="text-align: left;">Contact Information</h2>
+                    <p style="margin-bottom: 30px;">Reach out to us for room reservations, banquet enquiries, or any other questions.</p>
+                    
+                    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Our Location</h4>
+                            <p>Kottiyoor Valley Park & Resort,<br>Kannur, Kerala, India</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Phone Support</h4>
+                            <p><a href="tel:+918281699860">+91 82816 99860</a></p>
+                            <p>Monday - Sunday, 24 Hours</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 20px; margin-bottom: 30px;">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Email</h4>
+                            <p>info@kottiyoorvalley.com</p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/918281699860" class="btn btn-primary" style="background-color: #25D366; width: 100%; text-align: center;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <div class="contact-box">
+                    <h3 style="margin-bottom: 20px;">Send us a Message</h3>
+                    <form>
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" required>
+                        
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" required>
+
+                        <label>Subject</label>
+                        <select class="form-control">
+                            <option>Room Booking</option>
+                            <option>Restaurant / Banquet</option>
+                            <option>General Inquiry</option>
+                        </select>
+
+                        <label>Message</label>
+                        <textarea rows="5" class="form-control"></textarea>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.682390886657!2d75.8!3d11.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDU0JzAwLjAiTiA3NcKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+        width="100%" height="450" style="border:0; filter: grayscale(100%) contrast(1.2);" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    <footer style="margin-top:0;">
+        <div class="container text-center">
+            <p>&copy; 2026 Kottiyoor Valley. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
